@@ -9,16 +9,50 @@
     <title>Vite Template</title>
   </head>
   <body>
-    <div class="card">
-      <h1 class="card__title">Título</h1>
-      <p class="card__text">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quis
-        mollitia sequi, quae voluptatem, eligendi, nam repudiandae cupiditate ad
-        consequatur natus omnis ducimus pariatur excepturi in magni voluptas
-        repellat quasi?
-      </p>
-      <a class="card__button" href="">boton</a>
-    </div>
+    <h1>FORMS</h1>
+    <form class="form">
+      <div class="form__field">
+        <label for="city-tiene-q-coincidir">City</label>
+        <input type="text" id="city-tiene-q-coincidir" name="city" />
+
+        <select name="country" id="country">
+          <option value="spanish">Spanish</option>
+          <option value="english">English</option>
+        </select>
+      </div>
+      <div class="form__field">
+        <label for="check">mamagüevo</label>
+        <input type="checkbox" id="check" />
+      </div>
+      <div class="form__field">
+        <label for="man">Man</label>
+        <input
+          type="radio"
+          id="man"
+          name="gender-elmismo"
+          value="man-nocoincide"
+        />
+        <label for="woman">Woman</label>
+        <input
+          type="radio"
+          id="man"
+          name="gender-elmismo"
+          value="women-nocoincide"
+        />
+        <label for="helicopter">Helicóptero de combate</label>
+        <input
+          type="radio"
+          id="helicopter"
+          name="gender-elmismo"
+          value="helicopter-nocoincide"
+        />
+      </div>
+      <input type="submit" value="SEND" />
+      <div class="toggle">
+        <input class="toggle__inbody" type="checkbox" id="toggle" />
+        <label class="toggle__label" for="toggle"></label>
+      </div>
+    </form>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

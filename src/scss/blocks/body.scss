@@ -2,6 +2,34 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #111;
+  background-color: #777695;
   font-family: sans-serif;
+}
+.toggle__inbody {
+  display: none;
+}
+.toggle__label {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 30px;
+  border-radius: 1rem;
+  background-color: pink;
+}
+.toggle__label::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(148, 65, 163);
+  border-radius: 50%;
+}
+.toggle__inbody:checked + .toggle__label::after {
+  left: 20px;
+  background-color: rgb(146, 200, 146);
+}
+.toggle__inbody:checked + .toggle__label {
+  background-color: rgb(234, 136, 61);
 }
